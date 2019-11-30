@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is the starting place for the Strange Loops project!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.notion.so/G-del-Escher-Bach-Planning-c72c140167014bae9fc84bb771f39b98"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Notion app
         </a>
       </header>
     </div>
