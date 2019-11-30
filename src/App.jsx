@@ -5,6 +5,9 @@ import penrose from './penrose.svg';
 /* 
 This file should really end in .tsx and use typescript but 
 I still need to figure out how to use it!
+* https://www.styled-components.com/docs/api#typescript
+* https://reactjs.org/docs/static-type-checking.html#typescript
+* https://www.typescriptlang.org/docs/handbook/jsx.html
 */
 
 const CenteredText = styled.div`
