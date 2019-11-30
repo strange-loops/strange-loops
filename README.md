@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Strange Loops
+
+## What is this project?
+
+Not totally sure yet. Some sort of companion to the [Gödel, Escher, Bach book](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach), probably.
+
+## Relevant Resources
+* [Instructions on how to set up VS Code `settings.json`](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
+* [PDF of book, hosted on Fermat's Library](https://fermatslibrary.com/p/3a0872e1)
+* [Notion project](https://www.notion.so/G-del-Escher-Bach-Planning-c72c140167014bae9fc84bb771f39b98)
+* [Pudding.cool examples](https://pudding.cool)
 
 ## Available Scripts
 
@@ -26,6 +36,10 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn run deploy`
+
+To deploy the app to GitHub pages.
 
 ### `yarn eject`
 
