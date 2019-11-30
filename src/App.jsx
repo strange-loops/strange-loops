@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import penrose from './penrose.svg';
 
@@ -33,21 +34,83 @@ const AppLink = styled.a`
     color: #09d3ac;
 `;
 
+const RoutingNote = styled.div`
+    padding-top: 10vmin;
+`;
+
+const StyledLink = styled(Link)`
+    color: #09d3ac;
+`;
+
+// You can think of these components as "pages"
+// in your app.
+
+function Home() {
+    return (
+        <div>
+            <AppLogo src={penrose} alt="penrose triangle" />
+            <p>This is the starting place for the Strange Loops project!</p>
+            <AppLink href="https://github.com/strange-loops/strange-loops" target="_blank" rel="noopener noreferrer">
+                See the README
+            </AppLink>
+        </div>
+    );
+}
+
+function About() {
+    return (
+        <div>
+            <h2>About</h2>
+        </div>
+    );
+}
+
+function Dashboard() {
+    return (
+        <div>
+            <h2>Dashboard</h2>
+        </div>
+    );
+}
+
 function App() {
     return (
-        <CenteredText>
-            <Header>
-                <AppLogo src={penrose} alt="penrose triangle" />
-                <p>This is the starting place for the Strange Loops project!</p>
-                <AppLink
-                    href="https://github.com/strange-loops/strange-loops"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See the README
-                </AppLink>
-            </Header>
-        </CenteredText>
+        <Router>
+            <CenteredText>
+                <Header>
+                    {/*
+                    A <Switch> looks through all its children <Route>
+                    elements and renders the first one whose path
+                    matches the current URL. Use a <Switch> any time
+                    you have multiple routes, but you want only one
+                    of them to render at a time
+                    */}
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/dashboard">
+                            <Dashboard />
+                        </Route>
+                    </Switch>
+                    <RoutingNote>Some routing junk below</RoutingNote>
+                    <ul>
+                        <li>
+                            <StyledLink to="/">Home</StyledLink>
+                        </li>
+                        <li>
+                            <StyledLink to="/about">About</StyledLink>
+                        </li>
+                        <li>
+                            <StyledLink to="/dashboard">Dashboard</StyledLink>
+                        </li>
+                    </ul>
+                </Header>
+            </CenteredText>
+        </Router>
     );
 }
 
