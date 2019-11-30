@@ -25,6 +25,17 @@ Not totally sure yet. Some sort of companion to the [Gödel, Escher, Bach book](
 * http://math.bu.edu/DYSYS/applets/Quadr.html
 * https://www.h-schmidt.net/MandelApplet/mandelapplet.html
 
+## Getting Started
+
+1. Install [`node`](https://nodejs.org/en/) ([`nvm`](https://github.com/nvm-sh/nvm) is recommended but `brew install node` works too)
+2. Install [`yarn`](https://yarnpkg.com/en/) (`brew install yarn` is easiest)
+3. Clone this repo with `git clone https://github.com/strange-loops/strange-loops.git`
+4. `cd` into repo with `cd strange-loops`
+5. Run `yarn` to install dependencies
+6. Run `yarn start` to run the app in development mode
+7. Download [VS Code](https://code.visualstudio.com/)
+8. Follow the intructions [in this blog post starting at `Automatically Fixing Code (VS Code)`](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
+
 ## Available Scripts
 
 In the project directory, you can run:

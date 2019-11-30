@@ -29,7 +29,7 @@ function App() {
   return (
     <CenteredText>
       <Header>
-        <AppLogo src={penrose} className="App-logo" alt="penrose triangle" />
+        <AppLogo src={penrose} alt="penrose triangle" />
         <p>
           This is the starting place for the Strange Loops project!
         </p>
