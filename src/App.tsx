@@ -4,11 +4,13 @@ import styled from 'styled-components';
 import penrose from './penrose.svg';
 
 /* 
-This file should really end in .tsx and use typescript but 
-I still need to figure out how to use it!
+I still need to figure out how to use it TypeScript!
+The styled.d.ts and myTheme.ts files are mostly mysteries to me.
+The react-app-env.d.ts file is probably garbage, but not sure if we can delete.
 * https://www.styled-components.com/docs/api#typescript
 * https://reactjs.org/docs/static-type-checking.html#typescript
 * https://www.typescriptlang.org/docs/handbook/jsx.html
+* https://webpack.js.org/guides/typescript/#importing-other-assets
 */
 
 const CenteredText = styled.div`
@@ -45,7 +47,7 @@ const StyledLink = styled(Link)`
 // You can think of these components as "pages"
 // in your app.
 
-function Home() {
+function Home(): JSX.Element {
     return (
         <div>
             <AppLogo src={penrose} alt="penrose triangle" />
@@ -57,7 +59,7 @@ function Home() {
     );
 }
 
-function About() {
+function About(): JSX.Element {
     return (
         <div>
             <h2>About</h2>
@@ -65,7 +67,7 @@ function About() {
     );
 }
 
-function Dashboard() {
+function Dashboard(): JSX.Element {
     return (
         <div>
             <h2>Dashboard</h2>
@@ -73,7 +75,7 @@ function Dashboard() {
     );
 }
 
-function App() {
+function App(): JSX.Element {
     return (
         <Router>
             <CenteredText>
