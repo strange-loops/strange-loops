@@ -82,18 +82,18 @@ const routePrefix = '/strange-loops';
 
 const routes = [
     {
-        path: `${routePrefix}/`,
+        path: `/`,
         exact: true,
         main: (): JSX.Element => <Home />,
         displayName: 'Home',
     },
     {
-        path: `${routePrefix}/about`,
+        path: `/about`,
         main: (): JSX.Element => <About />,
         displayName: 'About',
     },
     {
-        path: `${routePrefix}/dashboard`,
+        path: `/dashboard`,
         main: (): JSX.Element => <Dashboard />,
         displayName: 'Dashboard',
     },
@@ -112,7 +112,7 @@ function App(): JSX.Element {
                     of them to render at a time
                     */}
                     <Switch>
-                        <Redirect exact from="/" to={routes[0].path} />
+                        <Redirect exact from="/" to={routePrefix} />
                         {routes.map((route, index) => (
                             // You can render a <Route> in as many places
                             // as you want in your app. It will render along
@@ -121,7 +121,7 @@ function App(): JSX.Element {
                             // that requires you to render multiple things
                             // in multiple places at the same URL is nothing
                             // more than multiple <Route>s.
-                            <Route key={index} path={route.path} exact={route.exact}>
+                            <Route key={index} path={`${routePrefix}${route.path}`} exact={route.exact}>
                                 <route.main />
                             </Route>
                         ))}
@@ -137,7 +137,7 @@ function App(): JSX.Element {
                             // in multiple places at the same URL is nothing
                             // more than multiple <Route>s.
                             <li key={index}>
-                                <StyledLink to={route.path}>{route.displayName}</StyledLink>
+                                <StyledLink to={`${routePrefix}${route.path}`}>{route.displayName}</StyledLink>
                             </li>
                         ))}
                     </ul>
