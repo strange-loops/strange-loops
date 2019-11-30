@@ -84,17 +84,17 @@ const routes = [
     {
         path: `/`,
         exact: true,
-        main: (): JSX.Element => <Home />,
+        component: Home,
         displayName: 'Home',
     },
     {
         path: `/about`,
-        main: (): JSX.Element => <About />,
+        component: About,
         displayName: 'About',
     },
     {
         path: `/dashboard`,
-        main: (): JSX.Element => <Dashboard />,
+        component: Dashboard,
         displayName: 'Dashboard',
     },
 ];
@@ -122,7 +122,7 @@ function App(): JSX.Element {
                             // in multiple places at the same URL is nothing
                             // more than multiple <Route>s.
                             <Route key={index} path={`${routePrefix}${route.path}`} exact={route.exact}>
-                                <route.main />
+                                <route.component />
                             </Route>
                         ))}
                     </Switch>
