@@ -12,11 +12,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://github.com/wbkd/awesome-interactive-journalism"
+          href="https://github.com/strange-loops/strange-loops"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Interactive Journalism List
+          See the README
         </a>
       </header>
     </div>

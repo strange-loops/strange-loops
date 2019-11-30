@@ -7,8 +7,14 @@ Not totally sure yet. Some sort of companion to the [Gödel, Escher, Bach book](
 ## Relevant Resources
 * [Instructions on how to set up VS Code `settings.json`](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
 * [PDF of book, hosted on Fermat's Library](https://fermatslibrary.com/p/3a0872e1)
+* [Interactive Journalism List](https://github.com/wbkd/awesome-interactive-journalism)
+* [Life After Death on Wikipedia](https://pudding.cool/2018/08/wiki-death/)
+  * [Brainstorm doc](https://docs.google.com/document/d/155rfL8UdusL99Ds00EyZkp17EuxcRuGuE6_nc-tTA1A/edit)
+  * [How it was made (YouTube)](https://www.youtube.com/playlist?list=PLsuhXm2zs07JuSfrNentA3DxAbaFO7ay2)
+  * [Web repo](https://github.com/the-pudding/wiki-death#the-puddings-favorite-libraries)
+  * [Data repo](https://github.com/the-pudding/wiki-death-data)
+* [More Pudding.cool examples](https://pudding.cool)
 * [Notion project](https://www.notion.so/G-del-Escher-Bach-Planning-c72c140167014bae9fc84bb771f39b98)
-* [Pudding.cool examples](https://pudding.cool)
 
 ## Available Scripts
 
