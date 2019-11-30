@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/strange-loops/static/css/main.34de6062.chunk.css",
-    "main.js": "/strange-loops/static/js/main.78756ca5.chunk.js",
-    "main.js.map": "/strange-loops/static/js/main.78756ca5.chunk.js.map",
+    "main.js": "/strange-loops/static/js/main.e5077b05.chunk.js",
+    "main.js.map": "/strange-loops/static/js/main.e5077b05.chunk.js.map",
     "runtime-main.js": "/strange-loops/static/js/runtime-main.9bea99be.js",
     "runtime-main.js.map": "/strange-loops/static/js/runtime-main.9bea99be.js.map",
     "static/js/2.a3fde1d4.chunk.js": "/strange-loops/static/js/2.a3fde1d4.chunk.js",
     "static/js/2.a3fde1d4.chunk.js.map": "/strange-loops/static/js/2.a3fde1d4.chunk.js.map",
     "index.html": "/strange-loops/index.html",
-    "precache-manifest.4da8375452adb5bca5ae1036e1a87cd4.js": "/strange-loops/precache-manifest.4da8375452adb5bca5ae1036e1a87cd4.js",
+    "precache-manifest.b5aa878695c15a9fc8e3d4cee1c0ad8e.js": "/strange-loops/precache-manifest.b5aa878695c15a9fc8e3d4cee1c0ad8e.js",
     "service-worker.js": "/strange-loops/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/strange-loops/static/css/main.34de6062.chunk.css.map",
     "static/media/penrose.svg": "/strange-loops/static/media/penrose.b7a8e114.svg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9bea99be.js",
     "static/js/2.a3fde1d4.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.78756ca5.chunk.js"
+    "static/js/main.e5077b05.chunk.js"
   ]
 }
