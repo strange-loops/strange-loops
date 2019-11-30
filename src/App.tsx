@@ -46,7 +46,6 @@ const StyledLink = styled(Link)`
 
 // You can think of these components as "pages"
 // in your app.
-
 function Home(): JSX.Element {
     return (
         <div>
@@ -63,6 +62,9 @@ function About(): JSX.Element {
     return (
         <div>
             <h2>About</h2>
+            <AppLink href="https://github.com/strange-loops/strange-loops" target="_blank" rel="noopener noreferrer">
+                See the README
+            </AppLink>
         </div>
     );
 }
@@ -71,9 +73,29 @@ function Dashboard(): JSX.Element {
     return (
         <div>
             <h2>Dashboard</h2>
+            <div>This dashboard sucks, sorry!</div>
         </div>
     );
 }
+
+const routes = [
+    {
+        path: '/',
+        exact: true,
+        main: (): JSX.Element => <Home />,
+        displayName: 'Home',
+    },
+    {
+        path: '/about',
+        main: (): JSX.Element => <About />,
+        displayName: 'About',
+    },
+    {
+        path: '/dashboard',
+        main: (): JSX.Element => <Dashboard />,
+        displayName: 'Dashboard',
+    },
+];
 
 function App(): JSX.Element {
     return (
@@ -88,27 +110,33 @@ function App(): JSX.Element {
                     of them to render at a time
                     */}
                     <Switch>
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
-                        <Route path="/about">
-                            <About />
-                        </Route>
-                        <Route path="/dashboard">
-                            <Dashboard />
-                        </Route>
+                        {routes.map((route, index) => (
+                            // You can render a <Route> in as many places
+                            // as you want in your app. It will render along
+                            // with any other <Route>s that also match the URL.
+                            // So, a sidebar or breadcrumbs or anything else
+                            // that requires you to render multiple things
+                            // in multiple places at the same URL is nothing
+                            // more than multiple <Route>s.
+                            <Route key={index} path={route.path} exact={route.exact}>
+                                <route.main />
+                            </Route>
+                        ))}
                     </Switch>
                     <RoutingNote>Some routing junk below</RoutingNote>
                     <ul>
-                        <li>
-                            <StyledLink to="/">Home</StyledLink>
-                        </li>
-                        <li>
-                            <StyledLink to="/about">About</StyledLink>
-                        </li>
-                        <li>
-                            <StyledLink to="/dashboard">Dashboard</StyledLink>
-                        </li>
+                        {routes.map((route, index) => (
+                            // You can render a <Route> in as many places
+                            // as you want in your app. It will render along
+                            // with any other <Route>s that also match the URL.
+                            // So, a sidebar or breadcrumbs or anything else
+                            // that requires you to render multiple things
+                            // in multiple places at the same URL is nothing
+                            // more than multiple <Route>s.
+                            <li key={index}>
+                                <StyledLink to={route.path}>{route.displayName}</StyledLink>
+                            </li>
+                        ))}
                     </ul>
                 </Header>
             </CenteredText>
