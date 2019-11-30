@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 import penrose from './penrose.svg';
 
@@ -78,20 +78,22 @@ function Dashboard(): JSX.Element {
     );
 }
 
+const routePrefix = '/strange-loops';
+
 const routes = [
     {
-        path: '/',
+        path: `${routePrefix}/`,
         exact: true,
         main: (): JSX.Element => <Home />,
         displayName: 'Home',
     },
     {
-        path: '/about',
+        path: `${routePrefix}/about`,
         main: (): JSX.Element => <About />,
         displayName: 'About',
     },
     {
-        path: '/dashboard',
+        path: `${routePrefix}/dashboard`,
         main: (): JSX.Element => <Dashboard />,
         displayName: 'Dashboard',
     },
@@ -110,6 +112,7 @@ function App(): JSX.Element {
                     of them to render at a time
                     */}
                     <Switch>
+                        <Redirect exact from="/" to={routes[0].path} />
                         {routes.map((route, index) => (
                             // You can render a <Route> in as many places
                             // as you want in your app. It will render along
