@@ -15,6 +15,15 @@ Not totally sure yet. Some sort of companion to the [Gödel, Escher, Bach book](
   * [Data repo](https://github.com/the-pudding/wiki-death-data)
 * [More Pudding.cool examples](https://pudding.cool)
 * [Notion project](https://www.notion.so/G-del-Escher-Bach-Planning-c72c140167014bae9fc84bb771f39b98)
+* [Cool Google project on bird sounds](https://experiments.withgoogle.com/ai/bird-sounds/view/)
+  * [Repo](https://github.com/googlecreativelab/aiexperiments-bird-sounds)
+* [More Google experiments](https://experiments.withgoogle.com/)
+* https://serendipstudio.org/playground/sierpinski.html
+* https://mcescher.com/gallery/
+* https://en.wikipedia.org/wiki/L-system
+* http://www.fractalzone.be/gallery.php
+* http://math.bu.edu/DYSYS/applets/Quadr.html
+* https://www.h-schmidt.net/MandelApplet/mandelapplet.html
 
 ## Available Scripts
 
